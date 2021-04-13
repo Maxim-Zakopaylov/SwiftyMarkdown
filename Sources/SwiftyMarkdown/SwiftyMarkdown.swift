@@ -595,7 +595,7 @@ extension SwiftyMarkdown {
 				let image1Attachment = NSTextAttachment()
                 if let urlImage = URL(string: token.metadataStrings[imgIdx]) {
                     if let data = try? Data(contentsOf: urlImage) {
-                        image1Attachment.image = NSImage(data: data)
+                        image1Attachment.image = UIImage(data: data)
                         let str = NSAttributedString(attachment: image1Attachment)
                         finalAttributedString.append(str)
                     }
