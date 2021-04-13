@@ -593,11 +593,6 @@ extension SwiftyMarkdown {
 				}
 				#if !os(macOS)
 				let image1Attachment = NSTextAttachment()
-				image1Attachment.image = UIImage(named: token.metadataStrings[imgIdx])
-				let str = NSAttributedString(attachment: image1Attachment)
-				finalAttributedString.append(str)
-				#elseif !os(watchOS)
-				let image1Attachment = NSTextAttachment()
                 if let urlImage = URL(string: token.metadataStrings[imgIdx]) {
                     if let data = try? Data(contentsOf: urlImage) {
                         image1Attachment.image = NSImage(data: data)
@@ -605,10 +600,15 @@ extension SwiftyMarkdown {
                         finalAttributedString.append(str)
                     }
                 } else {
-                    image1Attachment.image = NSImage(named: token.metadataStrings[imgIdx])
+                    image1Attachment.image = UIImage(named: token.metadataStrings[imgIdx])
                     let str = NSAttributedString(attachment: image1Attachment)
                     finalAttributedString.append(str)
                 }
+				#elseif !os(watchOS)
+				let image1Attachment = NSTextAttachment()
+                image1Attachment.image = NSImage(named: token.metadataStrings[imgIdx])
+                let str = NSAttributedString(attachment: image1Attachment)
+                finalAttributedString.append(str)
 				#endif
 				continue
 			}
