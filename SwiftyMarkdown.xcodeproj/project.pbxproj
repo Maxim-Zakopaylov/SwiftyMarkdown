@@ -25,6 +25,7 @@
 		F4ACB6CE23E8A88400EA665D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACB6CD23E8A88400EA665D /* Token.swift */; };
 		F4ACB6D023E8A8A500EA665D /* CharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACB6CF23E8A8A500EA665D /* CharacterRule.swift */; };
 		F4ACB6D223E8B08400EA665D /* PerfomanceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACB6D123E8B08400EA665D /* PerfomanceLog.swift */; };
+		FC1E6349267B89ED001975DD /* UIImage+SwiftyMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E6348267B89ED001975DD /* UIImage+SwiftyMarkdown.swift */; };
 		OBJ_40 /* String+SwiftyMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* String+SwiftyMarkdown.swift */; };
 		OBJ_41 /* SwiftyLineProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SwiftyLineProcessor.swift */; };
 		OBJ_42 /* SwiftyMarkdown+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SwiftyMarkdown+iOS.swift */; };
@@ -63,6 +64,7 @@
 		F4ACB6CD23E8A88400EA665D /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		F4ACB6CF23E8A8A500EA665D /* CharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRule.swift; sourceTree = "<group>"; };
 		F4ACB6D123E8B08400EA665D /* PerfomanceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfomanceLog.swift; sourceTree = "<group>"; };
+		FC1E6348267B89ED001975DD /* UIImage+SwiftyMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyMarkdown.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* SwiftyLineProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLineProcessor.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SwiftyMarkdown+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyMarkdown+iOS.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* SwiftyMarkdown+macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyMarkdown+macOS.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				F4ACB6CA23E8A5C500EA665D /* SwiftyScanner.swift */,
 				F4ACB6CF23E8A8A500EA665D /* CharacterRule.swift */,
 				F4ACB6D123E8B08400EA665D /* PerfomanceLog.swift */,
+				FC1E6348267B89ED001975DD /* UIImage+SwiftyMarkdown.swift */,
 			);
 			name = SwiftyMarkdown;
 			path = Sources/SwiftyMarkdown;
@@ -278,6 +281,7 @@
 				OBJ_45 /* SwiftyTokeniser.swift in Sources */,
 				F4ACB6D023E8A8A500EA665D /* CharacterRule.swift in Sources */,
 				F4ACB6CE23E8A88400EA665D /* Token.swift in Sources */,
+				FC1E6349267B89ED001975DD /* UIImage+SwiftyMarkdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

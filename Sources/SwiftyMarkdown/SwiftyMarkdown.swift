@@ -595,7 +595,11 @@ extension SwiftyMarkdown {
 				let image1Attachment = NSTextAttachment()
                 if let urlImage = URL(string: token.metadataStrings[imgIdx]) {
                     if let data = try? Data(contentsOf: urlImage) {
-                        image1Attachment.image = UIImage(data: data)
+                        let img = UIImage(data: data)
+                        let deviceWidth = UIScreen.main.bounds.width
+                        let recomendetedHeight = img?.height(forWidth: deviceWidth) ?? 0.0
+                        image1Attachment.image = img?.resizedImage(newSize: CGSize(width: deviceWidth, height: recomendetedHeight))
+                        
                         let str = NSAttributedString(attachment: image1Attachment)
                         finalAttributedString.append(str)
                     }
