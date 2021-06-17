@@ -598,7 +598,7 @@ extension SwiftyMarkdown {
                         let img = UIImage(data: data)
                         let deviceWidth = UIScreen.main.bounds.width
                         let recomendetedHeight = img?.height(forWidth: deviceWidth) ?? 0.0
-                        image1Attachment.image = img?.resizedImage(newSize: CGSize(width: deviceWidth, height: recomendetedHeight))
+                        image1Attachment.image = img?.aspectFittedToHeight(recomendetedHeight)
                         
                         let str = NSAttributedString(attachment: image1Attachment)
                         finalAttributedString.append(str)
